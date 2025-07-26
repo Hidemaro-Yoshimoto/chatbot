@@ -1,0 +1,14 @@
+body { font-family: sans-serif; margin: 20px; }
+.container { max-width: 600px; margin: auto; }
+#loading { text-align: center; padding: 40px; }
+.slot-group { margin-bottom: 20px; }
+.slot-date { font-weight: bold; padding-bottom: 10px; border-bottom: 2px solid #eee; margin-bottom: 10px;}
+.slot-button {
+  background:#00B900; color:#fff; border:none;
+  padding:10px 15px; margin:5px; border-radius:5px;
+  font-size:16px; cursor:pointer;
+}
+.slot-button:disabled { background:#ccc; }
+#form-area { margin-top:20px; }
+input { width:100%; padding:8px; margin-bottom:10px; box-sizing:border-box; }
+#submit-button { width:100%; padding:12px; font-size:18px; }

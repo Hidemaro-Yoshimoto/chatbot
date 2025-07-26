@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>来店予約</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h3>ご来店予約</h3>
+
+    <div id="slots-container">
+      <div id="loading">空き時間を検索中...</div>
+    </div>
+
+    <div id="form-area" style="display:none">
+      <p><strong>選択日時:</strong> <span id="selected-slot-text"></span></p>
+      <input id="name" type="text" placeholder="お名前">
+      <input id="tel"  type="tel"  placeholder="電話番号">
+      <button id="submit-button" class="slot-button">この内容で予約する</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
