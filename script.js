@@ -1,6 +1,6 @@
 /* ===== 置き換え必要 ===== */
 const LIFF_ID  = '2007818793-rO8zbvoD';
-const API_ROOT = 'https://script.googleusercontent.com/macros/s/AKfycby_QkdRuDAwzOL1tsjxLc2zW6RzMoojm5TXK4igjaxXRa_hmd4IPnt7-B8cObZJU-GEug/exec?id=AKfycby_QkdRuDAwzOL1tsjxLc2zW6RzMoojm5TXK4igjaxXRa_hmd4IPnt7-B8cObZJU-GEug';
+const API_ROOT = 'https://calendar-api-454724905787.asia-northeast1.run.app';
 /* ======================= */
 
 let selectedSlot = null;
