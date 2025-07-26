@@ -1,6 +1,6 @@
 /* ===== 置き換え必要 ===== */
 const LIFF_ID  = '2007818793-rO8zbvoD';
-const API_ROOT = 'https://script.google.com/macros/s/AKfycbyUFmpY8zpCrajeBJ2OCgPEc4xmhFA6nKYlpbD1QqoSpCzq4jrDQU6ANuc2q66xbGUz5A/exec';
+const API_ROOT = 'https://script.google.com/macros/s/AKfycbw9DuwgsLfV8OmSanmAUL8sY9qBICiGDNyUWd65xPMwu5xl9WBhQXMkRfbKOXvYz2nkiQ/exec';
 /* ======================= */
 
 let selectedSlot = null;
