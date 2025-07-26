@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>来店予約</title>
-
+  <title>ご来店予約</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 </head>
@@ -12,15 +11,37 @@
   <div class="container">
     <h3>ご来店予約</h3>
 
+    <!-- ── 空き枠エリア ── -->
     <div id="slots-container">
       <div id="loading">空き時間を検索中...</div>
     </div>
 
+    <!-- ── 入力フォーム ── -->
     <div id="form-area" style="display:none">
       <p><strong>選択日時:</strong> <span id="selected-slot-text"></span></p>
       <input id="name" type="text" placeholder="お名前">
       <input id="tel"  type="tel"  placeholder="電話番号">
       <button id="submit-button" class="slot-button">この内容で予約する</button>
+    </div>
+
+    <!-- ── 予約完了画面 ── -->
+    <div id="thankyou" style="display:none;text-align:center">
+      <h3 style="margin-bottom:24px">ご予約ありがとうございます！</h3>
+      <div id="confirm-text" style="line-height:1.8"></div>
+
+      <h4 style="margin-top:32px">ご来店先</h4>
+      <p>LIFF&nbsp;CAFE&nbsp;渋谷宮益坂店</p>
+      <p>〒150‑0002&nbsp;東京都渋谷区渋谷&nbsp;1‑23‑4</p>
+
+      <!-- Google マップ（任意で key を置き換え） -->
+      <iframe
+        width="100%" height="250" style="border:0;border-radius:8px"
+        loading="lazy" allowfullscreen
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCKFrIqyt5N2qxC1eXZdrcFASaEnqYzXN0&q=渋谷駅">
+      </iframe>
+
+      <button class="slot-button" style="width:100%;margin-top:32px"
+              onclick="liff.closeWindow()">閉じる</button>
     </div>
   </div>
 
